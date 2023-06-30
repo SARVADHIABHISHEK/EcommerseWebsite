@@ -15,7 +15,7 @@ class AppRouter extends $AppRouter {
       page: ECLandingRoute.page,
       children: [
         AutoRoute(path: 'landing-page/', page: ProductHomeScreen.page),
-        AutoRoute(path: 'landing-page/blog', page: BlogScreen.page),
+        AutoRoute(path: 'blog', page: BlogScreen.page),
         AutoRoute(path: 'landing-page/all-category', page: AllCategoryScreen.page),
         AutoRoute(path: 'landing-page/all-brand', page: AllBrandScreen.page),
         AutoRoute(path: 'landing-page/offer', page: OffersScreen.page),
