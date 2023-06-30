@@ -1,6 +1,6 @@
 {
-    "name": "ecommerse_admin",
-    "short_name": "ecommerse_admin",
+    "name": "Admin",
+    "short_name": "Admin",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

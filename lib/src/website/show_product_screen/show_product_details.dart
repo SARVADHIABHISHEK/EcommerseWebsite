@@ -1,4 +1,3 @@
-
 import 'package:ecommerse_website/src/website/constant/allconst.dart';
 import 'package:ecommerse_website/src/website/utils/localizaion/multi_language.dart';
 
@@ -58,6 +57,7 @@ class _ShowProductDetailsState extends State<ShowProductDetails> {
 
   final _transController = TransformationController();
   void _onMove(PointerHoverEvent details) {
+
     final x = details.localPosition.dx;
     final y = details.localPosition.dy;
 

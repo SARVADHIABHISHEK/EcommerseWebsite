@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -23,14 +24,16 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="ecommerse_admin">
+  <meta name="apple-mobile-web-app-title" content="admin_dashboard">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>ecommerse_admin</title>
+  <title>Ecommerse Website</title>
   <link rel="manifest" href="manifest.json">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAymVcfVT6rx7uZmfsaYdDKdebdZzudOQ"></script>
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -39,21 +42,40 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
+
+
+  <div id="loading_indicator" class="container"
+    style="height: 100vh;; display:flex; justify-content: center; align-items: center;">
+    <img class="indicator" src="./assets/Ripple.gif" />
+
+  </div>
+
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
         }
+      }).then(function (engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function (appRunner) {
+        return appRunner.runApp();
       });
     });
+    <!-- Removes the loading indicator after 1 seconds -->
+
+    // window.onload = function () {
+    //   setTimeout(function () {
+    //     var loadingIndicator = document.getElementById("loading_container");
+    //     if (loadingIndicator) {
+    //       loadingIndicator.remove();
+    //     }
+    //   }, 2000)
+    // }
   </script>
 </body>
+
 </html>

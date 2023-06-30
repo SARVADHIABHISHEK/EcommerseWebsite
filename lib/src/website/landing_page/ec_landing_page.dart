@@ -253,11 +253,11 @@ class _ECLandingPageState extends State<ECLandingPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     _loginRegister(),
-                    _textButton(
-                        onPressed: () {
-                          // context.router.push(const FMenuBar());
-                        },
-                        text: 'Go to Dashboard'),
+                    // _textButton(
+                    //     onPressed: () {
+                    //       // context.router.push(const FMenuBar());
+                    //     },
+                    //     text: 'Go to Dashboard'),
                   ],
                 ),
                 FxBox.h16,
@@ -271,11 +271,11 @@ class _ECLandingPageState extends State<ECLandingPage> {
                 const Spacer(),
                 _loginRegister(),
                 FxBox.w24,
-                _textButton(
-                    onPressed: () {
-                      // context.router.push(const FMenuBar());
-                    },
-                    text: 'Go to Dashboard'),
+                // _textButton(
+                //     onPressed: () {
+                //       // context.router.push(const FMenuBar());
+                //     },
+                //     text: 'Go to Dashboard'),
               ],
             ),
     );
